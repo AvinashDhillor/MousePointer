@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ad.controller.MousePointerController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../images/background.png" />
+         </image>
+         <viewport>
+            <Rectangle2D height="400.0" width="600.0" />
+         </viewport>
+      </ImageView>
+      <Label contentDisplay="CENTER" layoutX="210.0" layoutY="180.0" text="Screen Dimension Viewer" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="16.0" />
+         </font>
+      </Label>
+      <VBox layoutX="214.0" layoutY="222.0" prefHeight="98.0" prefWidth="170.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" text="X" textAlignment="CENTER" textFill="#ff2f2f">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="9.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="120.0" fx:id="x_axis">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <Separator disable="true" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Y" textAlignment="CENTER" textFill="#1389ff">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="9.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="y_axis" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="120.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
+            </HBox>
+         </children>
+      </VBox>
+      <ImageView fitHeight="57.0" fitWidth="72.0" layoutX="271.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="166.0" layoutY="340.0" text="Move mouse cursor on screen to view coordinates" textFill="#cccccc" />
+   </children>
+</AnchorPane>
