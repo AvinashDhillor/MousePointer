@@ -1,6 +1,7 @@
 # Mouse Pointer Location Viewer
 
-![Main Image](./github/screenshots/image01.png)
+<p align="center">
+  <img src="./.github/img/image01.png">
+</p>
 
-Application to view mouse pointer coordinates on screen that can be helpfull while writing automation programs.
-
+Helpful when building automation applications, this application lets you see the coordinates of your mouse pointer on the screen.
